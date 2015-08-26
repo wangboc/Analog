@@ -3,16 +3,92 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Xml;
 
 namespace Analog
 {
     public class ElectricityOriginalData
     {
-        public ElectricityOriginalData()
+        public ElectricityOriginalData(XmlNode node, int ParentID)
         {
+            this.ParentID = ParentID;
+            this.NodeID = Convert.ToInt32(node.Attributes["NodeID"].Value);
+            this.Name = node.Attributes["Name"].Value;
+            this.PID = Convert.ToInt32(node.Attributes["PID"].Value);
+            this.MID = Convert.ToInt32(node.Attributes["MID"].Value);
+            this.UA = Convert.ToDouble(node.Attributes["UA"].Value);
+            this.UB = Convert.ToDouble(node.Attributes["UB"].Value);
+            this.UC = Convert.ToDouble(node.Attributes["UC"].Value);
+            this.UAB = Convert.ToDouble(node.Attributes["UAB"].Value);
+            this.UBC = Convert.ToDouble(node.Attributes["UBC"].Value);
+            this.UCA = Convert.ToDouble(node.Attributes["UCA"].Value);
+            this.IA = Convert.ToDouble(node.Attributes["IA"].Value);
+            this.IB = Convert.ToDouble(node.Attributes["IB"].Value);
+            this.IC = Convert.ToDouble(node.Attributes["IC"].Value);
+            this.PA = Convert.ToDouble(node.Attributes["PA"].Value);
+            this.PB = Convert.ToDouble(node.Attributes["PB"].Value);
+            this.PC = Convert.ToDouble(node.Attributes["PC"].Value);
+            this.PS = Convert.ToDouble(node.Attributes["PS"].Value);
+            this.QA = Convert.ToDouble(node.Attributes["QA"].Value);
+            this.QB = Convert.ToDouble(node.Attributes["QB"].Value);
+            this.QC = Convert.ToDouble(node.Attributes["QC"].Value);
+            this.QS = Convert.ToDouble(node.Attributes["QS"].Value);
+            this.SS = Convert.ToDouble(node.Attributes["SS"].Value);
+            this.SA = Convert.ToDouble(node.Attributes["SA"].Value);
+            this.SB = Convert.ToDouble(node.Attributes["SB"].Value);
+            this.SC = Convert.ToDouble(node.Attributes["SC"].Value);
+            this.PFA = Convert.ToDouble(node.Attributes["PFA"].Value);
+            this.PFB = Convert.ToDouble(node.Attributes["PFB"].Value);
+            this.PFC = Convert.ToDouble(node.Attributes["PFC"].Value);
+            this.PFS = Convert.ToDouble(node.Attributes["PFS"].Value);
+            this.FR = Convert.ToDouble(node.Attributes["FR"].Value);
+            this.WPP = Convert.ToDouble(node.Attributes["WPP"].Value);
+            this.WPN = Convert.ToDouble(node.Attributes["WPN"].Value);
+            this.WQN = Convert.ToDouble(node.Attributes["WQN"].Value);
+            this.WQP = Convert.ToDouble(node.Attributes["WQP"].Value);
+            this.IStatus = (node.Attributes["IStatus"].Value);
+            this.EventTime = DateTime.Now.ToString("yyyy/MM/dd hh:mm:ss");
+            this.WPPIncre = 1;
+            this.WPNIncre = 1;
+            this.WQNIncre = 1;
+            this.WQPIncre = 1;
         }
 
-        public int ID { get; set; }
+
+        public void ClearData()
+        {
+            this.IA = 0;
+            this.IB = 0;
+            this.IC = 0;
+            this.PA = 0;
+            this.PB = 0;
+            this.PC = 0;
+            this.PS = 0;
+            this.QA = 0;
+            this.QB = 0;
+            this.QC = 0;
+            this.QS = 0;
+            this.SS = 0;
+            this.SA = 0;
+            this.SB = 0;
+            this.SC = 0;
+
+
+            this.WPP = 0;
+            this.WPN = 0;
+            this.WQN = 0;
+            this.WQP = 0;
+        }
+
+        public override string ToString()
+        {
+            return Name;
+        }
+
+        public int ParentID { get; set; }
+
+        public string Name { get; set; }
+        public int NodeID { get; set; }
 
         /// <summary>
         /// //项目编号
@@ -160,9 +236,19 @@ namespace Analog
         public Double WPP { get; set; }
 
         /// <summary>
+        /// WPP增量，用于测试模拟数据
+        /// </summary>
+        public Double WPPIncre { get; set; }
+
+        /// <summary>
         /// 负向有功电能
         /// </summary>
         public Double WPN { get; set; }
+
+        /// <summary>
+        /// WPN增量，用于测试模拟数据
+        /// </summary>
+        public Double WPNIncre { get; set; }
 
         /// <summary>
         /// 正向无功电能
@@ -170,14 +256,24 @@ namespace Analog
         public Double WQP { get; set; }
 
         /// <summary>
+        /// WQP增量，用于测试模拟数据
+        /// </summary>
+        public Double WQPIncre { get; set; }
+
+        /// <summary>
         /// 负向无功电能
         /// </summary>
         public Double WQN { get; set; }
 
         /// <summary>
+        /// WQN增量，用于测试模拟数据
+        /// </summary>
+        public Double WQNIncre { get; set; }
+
+        /// <summary>
         /// 开关量输入状态
         /// </summary>
-        public int IStatus { get; set; }
+        public string IStatus { get; set; }
 
         /// <summary>
         /// 开关量输出状态
@@ -187,11 +283,13 @@ namespace Analog
         /// <summary>
         /// 发生时间
         /// </summary>
-        public DateTime EventTime { get; set; }
+        public string EventTime { get; set; }
 
         /// <summary>
         /// 接收时间
         /// </summary>
         public DateTime ReceivedTime { get; set; }
+
+        public bool HasChildren { get; set; }
     }
 }
