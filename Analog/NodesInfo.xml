@@ -1,415 +1,108 @@
-<Node Name="高压G2表" PID="30000" MID="1" UA="220" UB="220" UC="220" UAB="380" UBC="380" UCA="380" IA="24" IB="24" IC="24"
-      PA="1200" PB="1200" PC="1200" PS="3600" QA="1200" QB="1200" QC="1200" QS="3600" SA="1200" SB="1200" SC="1200"
-      SS="3600" PFA="1" PFB="1" PFC="1" PFS="1" FR="50" WPP="2710" WPN="2710" WQP="2710" WQN="2710" IStatus="FFFF"
-      EventTime="0">
-  <Node Name="高压G5表"  PID="30000" MID="2" UA="220" UB="220" UC="220" UAB="380" UBC="380" UCA="380" IA="24" IB="24"
-        IC="24" PA="1200" PB="1200" PC="1200" PS="3600" QA="1200" QB="1200" QC="1200" QS="3600" SA="1200" SB="1200"
-        SC="1200" SS="3600" PFA="1" PFB="1" PFC="1" PFS="1" FR="50" WPP="2710" WPN="2710" WQP="2710" WQN="2710"
-        IStatus="FFFF" EventTime="0">
-    <Node Name="低压1-1表" PID="30000" MID="54" UA="220" UB="220" UC="220" UAB="380" UBC="380" UCA="380" IA="24" IB="24"
-          IC="24" PA="1200" PB="1200" PC="1200" PS="3600" QA="1200" QB="1200" QC="1200" QS="3600" SA="1200" SB="1200"
-          SC="1200" SS="3600" PFA="1" PFB="1" PFC="1" PFS="1" FR="50" WPP="2710" WPN="2710" WQP="2710" WQN="2710"
-          IStatus="FFFF" EventTime="0">
-      <Node Name="低压1-3表" PID="30000" MID="39" UA="220" UB="220" UC="220" UAB="380" UBC="380" UCA="380" IA="24" IB="24"
-            IC="24" PA="1200" PB="1200" PC="1200" PS="3600" QA="1200" QB="1200" QC="1200" QS="3600" SA="1200" SB="1200"
-            SC="1200" SS="3600" PFA="1" PFB="1" PFC="1" PFS="1" FR="50" WPP="2710" WPN="2710" WQP="2710" WQN="2710"
-            IStatus="FFFF" EventTime="0">
-        <Node Name="低压1-3-19表" PID="30000" MID="40" UA="220" UB="220" UC="220" UAB="380" UBC="380" UCA="380" IA="24"
-              IB="24" IC="24" PA="1200" PB="1200" PC="1200" PS="3600" QA="1200" QB="1200" QC="1200" QS="3600" SA="1200"
-              SB="1200" SC="1200" SS="3600" PFA="1" PFB="1" PFC="1" PFS="1" FR="50" WPP="2710" WPN="2710" WQP="2710"
-              WQN="2710" IStatus="FFFF" EventTime="0">
+<Node Name="高压G2表" PID="30000" MID="1" UA="220" UB="220" UC="220" UAB="380" UBC="380" UCA="380" IA="64" IB="64" IC="64" PA="3200" PB="3200" PC="3200" PS="9600" QA="3200" QB="3200" QC="3200" QS="9600" SA="3200" SB="3200" SC="3200" SS="9600" PFA="1" PFB="1" PFC="1" PFS="1" FR="50" WPP="3715.1" WPN="3712" WQP="3712" WQN="3712" IStatus="FFFF" EventTime="0">
+  <Node Name="高压G5表" PID="30000" MID="2" UA="220" UB="220" UC="220" UAB="380" UBC="380" UCA="380" IA="24" IB="24" IC="24" PA="1200" PB="1200" PC="1200" PS="3600" QA="1200" QB="1200" QC="1200" QS="3600" SA="1200" SB="1200" SC="1200" SS="3600" PFA="1" PFB="1" PFC="1" PFS="1" FR="50" WPP="1395.1" WPN="1392" WQP="1392" WQN="1392" IStatus="FFFF" EventTime="0">
+    <Node Name="低压1-1表" PID="30000" MID="54" UA="220" UB="220" UC="220" UAB="380" UBC="380" UCA="380" IA="24" IB="24" IC="24" PA="1200" PB="1200" PC="1200" PS="3600" QA="1200" QB="1200" QC="1200" QS="3600" SA="1200" SB="1200" SC="1200" SS="3600" PFA="1" PFB="1" PFC="1" PFS="1" FR="50" WPP="1395.1" WPN="1392" WQP="1392" WQN="1392" IStatus="FFFF" EventTime="0">
+      <Node Name="低压1-3表" PID="30000" MID="39" UA="220" UB="220" UC="220" UAB="380" UBC="380" UCA="380" IA="8" IB="8" IC="8" PA="400" PB="400" PC="400" PS="1200" QA="400" QB="400" QC="400" QS="1200" SA="400" SB="400" SC="400" SS="1200" PFA="1" PFB="1" PFC="1" PFS="1" FR="50" WPP="464" WPN="464" WQP="464" WQN="464" IStatus="FFFF" EventTime="0">
+        <Node Name="低压1-3-19表" PID="30000" MID="40" UA="220" UB="220" UC="220" UAB="380" UBC="380" UCA="380" IA="2" IB="2" IC="2" PA="100" PB="100" PC="100" PS="300" QA="100" QB="100" QC="100" QS="300" SA="100" SB="100" SC="100" SS="300" PFA="1" PFB="1" PFC="1" PFS="1" FR="50" WPP="116" WPN="116" WQP="116" WQN="116" IStatus="FFFF" EventTime="0">
         </Node>
-        <Node Name="低压1-3-20表" PID="30000" MID="41" UA="220" UB="220" UC="220" UAB="380" UBC="380" UCA="380" IA="24"
-              IB="24" IC="24" PA="1200" PB="1200" PC="1200" PS="3600" QA="1200" QB="1200" QC="1200" QS="3600" SA="1200"
-              SB="1200" SC="1200" SS="3600" PFA="1" PFB="1" PFC="1" PFS="1" FR="50" WPP="2710" WPN="2710" WQP="2710"
-              WQN="2710" IStatus="FFFF" EventTime="0">
+        <Node Name="低压1-3-20表" PID="30000" MID="41" UA="220" UB="220" UC="220" UAB="380" UBC="380" UCA="380" IA="2" IB="2" IC="2" PA="100" PB="100" PC="100" PS="300" QA="100" QB="100" QC="100" QS="300" SA="100" SB="100" SC="100" SS="300" PFA="1" PFB="1" PFC="1" PFS="1" FR="50" WPP="116" WPN="116" WQP="116" WQN="116" IStatus="FFFF" EventTime="0">
         </Node>
-        <Node Name="低压1-3-21表" PID="30000" MID="42" UA="220" UB="220" UC="220" UAB="380" UBC="380" UCA="380" IA="24"
-              IB="24" IC="24" PA="1200" PB="1200" PC="1200" PS="3600" QA="1200" QB="1200" QC="1200" QS="3600" SA="1200"
-              SB="1200" SC="1200" SS="3600" PFA="1" PFB="1" PFC="1" PFS="1" FR="50" WPP="2710" WPN="2710" WQP="2710"
-              WQN="2710" IStatus="FFFF" EventTime="0">
+        <Node Name="低压1-3-21表" PID="30000" MID="42" UA="220" UB="220" UC="220" UAB="380" UBC="380" UCA="380" IA="2" IB="2" IC="2" PA="100" PB="100" PC="100" PS="300" QA="100" QB="100" QC="100" QS="300" SA="100" SB="100" SC="100" SS="300" PFA="1" PFB="1" PFC="1" PFS="1" FR="50" WPP="116" WPN="116" WQP="116" WQN="116" IStatus="FFFF" EventTime="0">
         </Node>
-        <Node Name="低压1-3-22表" PID="30000" MID="43" UA="220" UB="220" UC="220" UAB="380" UBC="380" UCA="380" IA="24"
-              IB="24" IC="24" PA="1200" PB="1200" PC="1200" PS="3600" QA="1200" QB="1200" QC="1200" QS="3600" SA="1200"
-              SB="1200" SC="1200" SS="3600" PFA="1" PFB="1" PFC="1" PFS="1" FR="50" WPP="2710" WPN="2710" WQP="2710"
-              WQN="2710" IStatus="FFFF" EventTime="0">
+        <Node Name="低压1-3-22表" PID="30000" MID="43" UA="220" UB="220" UC="220" UAB="380" UBC="380" UCA="380" IA="2" IB="2" IC="2" PA="100" PB="100" PC="100" PS="300" QA="100" QB="100" QC="100" QS="300" SA="100" SB="100" SC="100" SS="300" PFA="1" PFB="1" PFC="1" PFS="1" FR="50" WPP="116" WPN="116" WQP="116" WQN="116" IStatus="FFFF" EventTime="0">
         </Node>
       </Node>
-      <Node Name="低压1-4表" PID="30000" MID="44" UA="220" UB="220" UC="220" UAB="380" UBC="380" UCA="380" IA="24" IB="24"
-            IC="24" PA="1200" PB="1200" PC="1200" PS="3600" QA="1200" QB="1200" QC="1200" QS="3600" SA="1200" SB="1200"
-            SC="1200" SS="3600" PFA="1" PFB="1" PFC="1" PFS="1" FR="50" WPP="2710" WPN="2710" WQP="2710" WQN="2710"
-            IStatus="FFFF" EventTime="0">
-
-        <Node Name="低压1-4-19表" PID="30000" MID="45" UA="220" UB="220" UC="220" UAB="380" UBC="380" UCA="380" IA="24"
-              IB="24" IC="24" PA="1200" PB="1200" PC="1200" PS="3600" QA="1200" QB="1200" QC="1200" QS="3600" SA="1200"
-              SB="1200" SC="1200" SS="3600" PFA="1" PFB="1" PFC="1" PFS="1" FR="50" WPP="2710" WPN="2710" WQP="2710"
-              WQN="2710" IStatus="FFFF" EventTime="0">
+      <Node Name="低压1-4表" PID="30000" MID="44" UA="220" UB="220" UC="220" UAB="380" UBC="380" UCA="380" IA="8" IB="8" IC="8" PA="400" PB="400" PC="400" PS="1200" QA="400" QB="400" QC="400" QS="1200" SA="400" SB="400" SC="400" SS="1200" PFA="1" PFB="1" PFC="1" PFS="1" FR="50" WPP="464" WPN="464" WQP="464" WQN="464" IStatus="FFFF" EventTime="0">
+        <Node Name="低压1-4-19表" PID="30000" MID="45" UA="220" UB="220" UC="220" UAB="380" UBC="380" UCA="380" IA="2" IB="2" IC="2" PA="100" PB="100" PC="100" PS="300" QA="100" QB="100" QC="100" QS="300" SA="100" SB="100" SC="100" SS="300" PFA="1" PFB="1" PFC="1" PFS="1" FR="50" WPP="116" WPN="116" WQP="116" WQN="116" IStatus="FFFF" EventTime="0">
         </Node>
-        <Node Name="低压1-4-20表" PID="30000" MID="46" UA="220" UB="220" UC="220" UAB="380" UBC="380" UCA="380" IA="24"
-              IB="24" IC="24" PA="1200" PB="1200" PC="1200" PS="3600" QA="1200" QB="1200" QC="1200" QS="3600" SA="1200"
-              SB="1200" SC="1200" SS="3600" PFA="1" PFB="1" PFC="1" PFS="1" FR="50" WPP="2710" WPN="2710" WQP="2710"
-              WQN="2710" IStatus="FFFF" EventTime="0">
+        <Node Name="低压1-4-20表" PID="30000" MID="46" UA="220" UB="220" UC="220" UAB="380" UBC="380" UCA="380" IA="2" IB="2" IC="2" PA="100" PB="100" PC="100" PS="300" QA="100" QB="100" QC="100" QS="300" SA="100" SB="100" SC="100" SS="300" PFA="1" PFB="1" PFC="1" PFS="1" FR="50" WPP="116" WPN="116" WQP="116" WQN="116" IStatus="FFFF" EventTime="0">
         </Node>
-        <Node Name="低压1-4-21表" PID="30000" MID="47" UA="220" UB="220" UC="220" UAB="380" UBC="380" UCA="380" IA="24"
-              IB="24" IC="24" PA="1200" PB="1200" PC="1200" PS="3600" QA="1200" QB="1200" QC="1200" QS="3600" SA="1200"
-              SB="1200" SC="1200" SS="3600" PFA="1" PFB="1" PFC="1" PFS="1" FR="50" WPP="2710" WPN="2710" WQP="2710"
-              WQN="2710" IStatus="FFFF" EventTime="0">
+        <Node Name="低压1-4-21表" PID="30000" MID="47" UA="220" UB="220" UC="220" UAB="380" UBC="380" UCA="380" IA="2" IB="2" IC="2" PA="100" PB="100" PC="100" PS="300" QA="100" QB="100" QC="100" QS="300" SA="100" SB="100" SC="100" SS="300" PFA="1" PFB="1" PFC="1" PFS="1" FR="50" WPP="116" WPN="116" WQP="116" WQN="116" IStatus="FFFF" EventTime="0">
         </Node>
-        <Node Name="低压1-4-22表" PID="30000" MID="48" UA="220" UB="220" UC="220" UAB="380" UBC="380" UCA="380" IA="24"
-              IB="24" IC="24" PA="1200" PB="1200" PC="1200" PS="3600" QA="1200" QB="1200" QC="1200" QS="3600" SA="1200"
-              SB="1200" SC="1200" SS="3600" PFA="1" PFB="1" PFC="1" PFS="1" FR="50" WPP="2710" WPN="2710" WQP="2710"
-              WQN="2710" IStatus="FFFF" EventTime="0">
+        <Node Name="低压1-4-22表" PID="30000" MID="48" UA="220" UB="220" UC="220" UAB="380" UBC="380" UCA="380" IA="2" IB="2" IC="2" PA="100" PB="100" PC="100" PS="300" QA="100" QB="100" QC="100" QS="300" SA="100" SB="100" SC="100" SS="300" PFA="1" PFB="1" PFC="1" PFS="1" FR="50" WPP="116" WPN="116" WQP="116" WQN="116" IStatus="FFFF" EventTime="0">
         </Node>
       </Node>
-      <Node Name="低压1-5表" PID="30000" MID="49" UA="220" UB="220" UC="220" UAB="380" UBC="380" UCA="380" IA="24" IB="24"
-            IC="24" PA="1200" PB="1200" PC="1200" PS="3600" QA="1200" QB="1200" QC="1200" QS="3600" SA="1200" SB="1200"
-            SC="1200" SS="3600" PFA="1" PFB="1" PFC="1" PFS="1" FR="50" WPP="2710" WPN="2710" WQP="2710" WQN="2710"
-            IStatus="FFFF" EventTime="0">
-        <Node Name="低压1-5-19表" PID="30000" MID="50" UA="220" UB="220" UC="220" UAB="380" UBC="380" UCA="380" IA="24"
-              IB="24"
-              IC="24" PA="1200" PB="1200" PC="1200" PS="3600" QA="1200" QB="1200" QC="1200" QS="3600" SA="1200"
-              SB="1200"
-              SC="1200" SS="3600" PFA="1" PFB="1" PFC="1" PFS="1" FR="50" WPP="2710" WPN="2710" WQP="2710" WQN="2710"
-              IStatus="FFFF" EventTime="0">
+      <Node Name="低压1-5表" PID="30000" MID="49" UA="220" UB="220" UC="220" UAB="380" UBC="380" UCA="380" IA="8" IB="8" IC="8" PA="400" PB="400" PC="400" PS="1200" QA="400" QB="400" QC="400" QS="1200" SA="400" SB="400" SC="400" SS="1200" PFA="1" PFB="1" PFC="1" PFS="1" FR="50" WPP="467.1" WPN="464" WQP="464" WQN="464" IStatus="FFFF" EventTime="0">
+        <Node Name="低压1-5-19表" PID="30000" MID="50" UA="220" UB="220" UC="220" UAB="380" UBC="380" UCA="380" IA="2" IB="2" IC="2" PA="100" PB="100" PC="100" PS="300" QA="100" QB="100" QC="100" QS="300" SA="100" SB="100" SC="100" SS="300" PFA="1" PFB="1" PFC="1" PFS="1" FR="50" WPP="116" WPN="116" WQP="116" WQN="116" IStatus="FFFF" EventTime="0">
         </Node>
-        <Node Name="低压1-5-20表" PID="30000" MID="51" UA="220" UB="220" UC="220" UAB="380" UBC="380" UCA="380" IA="24"
-              IB="24"
-              IC="24" PA="1200" PB="1200" PC="1200" PS="3600" QA="1200" QB="1200" QC="1200" QS="3600" SA="1200"
-              SB="1200"
-              SC="1200" SS="3600" PFA="1" PFB="1" PFC="1" PFS="1" FR="50" WPP="2710" WPN="2710" WQP="2710" WQN="2710"
-              IStatus="FFFF" EventTime="0">
+        <Node Name="低压1-5-20表" PID="30000" MID="51" UA="220" UB="220" UC="220" UAB="380" UBC="380" UCA="380" IA="2" IB="2" IC="2" PA="100" PB="100" PC="100" PS="300" QA="100" QB="100" QC="100" QS="300" SA="100" SB="100" SC="100" SS="300" PFA="1" PFB="1" PFC="1" PFS="1" FR="50" WPP="116" WPN="116" WQP="116" WQN="116" IStatus="FFFF" EventTime="0">
         </Node>
-        <Node Name="低压1-5-21表" PID="30000" MID="52" UA="220" UB="220" UC="220" UAB="380" UBC="380" UCA="380" IA="24"
-              IB="24"
-              IC="24" PA="1200" PB="1200" PC="1200" PS="3600" QA="1200" QB="1200" QC="1200" QS="3600" SA="1200"
-              SB="1200"
-              SC="1200" SS="3600" PFA="1" PFB="1" PFC="1" PFS="1" FR="50" WPP="2710" WPN="2710" WQP="2710" WQN="2710"
-              IStatus="FFFF" EventTime="0">
+        <Node Name="低压1-5-21表" PID="30000" MID="52" UA="220" UB="220" UC="220" UAB="380" UBC="380" UCA="380" IA="2" IB="2" IC="2" PA="100" PB="100" PC="100" PS="300" QA="100" QB="100" QC="100" QS="300" SA="100" SB="100" SC="100" SS="300" PFA="1" PFB="1" PFC="1" PFS="1" FR="50" WPP="119.1" WPN="116" WQP="116" WQN="116" IStatus="FFFF" EventTime="0">
         </Node>
-        <Node Name="低压1-5-22表" PID="30000" MID="53" UA="220" UB="220" UC="220" UAB="380" UBC="380" UCA="380" IA="24"
-              IB="24"
-              IC="24" PA="1200" PB="1200" PC="1200" PS="3600" QA="1200" QB="1200" QC="1200" QS="3600" SA="1200"
-              SB="1200"
-              SC="1200" SS="3600" PFA="1" PFB="1" PFC="1" PFS="1" FR="50" WPP="2710" WPN="2710" WQP="2710" WQN="2710"
-              IStatus="FFFF" EventTime="0">
+        <Node Name="低压1-5-22表" PID="30000" MID="53" UA="220" UB="220" UC="220" UAB="380" UBC="380" UCA="380" IA="2" IB="2" IC="2" PA="100" PB="100" PC="100" PS="300" QA="100" QB="100" QC="100" QS="300" SA="100" SB="100" SC="100" SS="300" PFA="1" PFB="1" PFC="1" PFS="1" FR="50" WPP="116" WPN="116" WQP="116" WQN="116" IStatus="FFFF" EventTime="0">
         </Node>
       </Node>
     </Node>
   </Node>
-  <Node Name="高压G6表" PID="30000" MID="3" UA="220" UB="220" UC="220" UAB="380" UBC="380" UCA="380" IA="24" IB="24"
-        IC="24"
-        PA="1200" PB="1200" PC="1200" PS="3600" QA="1200" QB="1200" QC="1200" QS="3600" SA="1200" SB="1200" SC="1200"
-        SS="3600" PFA="1" PFB="1" PFC="1" PFS="1" FR="50" WPP="2710" WPN="2710" WQP="2710" WQN="2710" IStatus="FFFF"
-        EventTime="0">
-    <Node Name="高压G9表" PID="30000" MID="6" UA="220" UB="220" UC="220" UAB="380" UBC="380" UCA="380" IA="24" IB="24"
-          IC="24"
-          PA="1200" PB="1200" PC="1200" PS="3600" QA="1200" QB="1200" QC="1200" QS="3600" SA="1200" SB="1200" SC="1200"
-          SS="3600" PFA="1" PFB="1" PFC="1" PFS="1" FR="50" WPP="2710" WPN="2710" WQP="2710" WQN="2710" IStatus="FFFF"
-          EventTime="0">
-      <Node Name="低压2-1表" PID="30000" MID="29" UA="220" UB="220" UC="220" UAB="380" UBC="380" UCA="380" IA="24" IB="24"
-            IC="24"
-            PA="1200" PB="1200" PC="1200" PS="3600" QA="1200" QB="1200" QC="1200" QS="3600" SA="1200" SB="1200"
-            SC="1200"
-            SS="3600" PFA="1" PFB="1" PFC="1" PFS="1" FR="50" WPP="2710" WPN="2710" WQP="2710" WQN="2710"
-            IStatus="FFFF"
-            EventTime="0">
-        <Node Name="低压2-3表" PID="30000" MID="30" UA="220" UB="220" UC="220" UAB="380" UBC="380" UCA="380" IA="24"
-              IB="24" IC="24"
-              PA="1200" PB="1200" PC="1200" PS="3600" QA="1200" QB="1200" QC="1200" QS="3600" SA="1200" SB="1200"
-              SC="1200"
-              SS="3600" PFA="1" PFB="1" PFC="1" PFS="1" FR="50" WPP="2710" WPN="2710" WQP="2710" WQN="2710"
-              IStatus="FFFF"
-              EventTime="0">
-
+  <Node Name="高压G6表" PID="30000" MID="3" UA="220" UB="220" UC="220" UAB="380" UBC="380" UCA="380" IA="14" IB="14" IC="14" PA="700" PB="700" PC="700" PS="2100" QA="700" QB="700" QC="700" QS="2100" SA="700" SB="700" SC="700" SS="2100" PFA="1" PFB="1" PFC="1" PFS="1" FR="50" WPP="811.999999999999" WPN="811.999999999999" WQP="811.999999999999" WQN="811.999999999999" IStatus="FFFF" EventTime="0">
+    <Node Name="高压G9表" PID="30000" MID="6" UA="220" UB="220" UC="220" UAB="380" UBC="380" UCA="380" IA="4" IB="4" IC="4" PA="200" PB="200" PC="200" PS="600" QA="200" QB="200" QC="200" QS="600" SA="200" SB="200" SC="200" SS="600" PFA="1" PFB="1" PFC="1" PFS="1" FR="50" WPP="232" WPN="232" WQP="232" WQN="232" IStatus="FFFF" EventTime="0">
+      <Node Name="低压2-1表" PID="30000" MID="29" UA="220" UB="220" UC="220" UAB="380" UBC="380" UCA="380" IA="4" IB="4" IC="4" PA="200" PB="200" PC="200" PS="600" QA="200" QB="200" QC="200" QS="600" SA="200" SB="200" SC="200" SS="600" PFA="1" PFB="1" PFC="1" PFS="1" FR="50" WPP="232" WPN="232" WQP="232" WQN="232" IStatus="FFFF" EventTime="0">
+        <Node Name="低压2-3表" PID="30000" MID="30" UA="220" UB="220" UC="220" UAB="380" UBC="380" UCA="380" IA="2" IB="2" IC="2" PA="100" PB="100" PC="100" PS="300" QA="100" QB="100" QC="100" QS="300" SA="100" SB="100" SC="100" SS="300" PFA="1" PFB="1" PFC="1" PFS="1" FR="50" WPP="116" WPN="116" WQP="116" WQN="116" IStatus="FFFF" EventTime="0">
         </Node>
-        <Node Name="低压2-5表" PID="30000" MID="31" UA="220" UB="220" UC="220" UAB="380" UBC="380" UCA="380" IA="24"
-              IB="24" IC="24"
-              PA="1200" PB="1200" PC="1200" PS="3600" QA="1200" QB="1200" QC="1200" QS="3600" SA="1200" SB="1200"
-              SC="1200"
-              SS="3600" PFA="1" PFB="1" PFC="1" PFS="1" FR="50" WPP="2710" WPN="2710" WQP="2710" WQN="2710"
-              IStatus="FFFF"
-              EventTime="0">
-
+        <Node Name="低压2-5表" PID="30000" MID="31" UA="220" UB="220" UC="220" UAB="380" UBC="380" UCA="380" IA="2" IB="2" IC="2" PA="100" PB="100" PC="100" PS="300" QA="100" QB="100" QC="100" QS="300" SA="100" SB="100" SC="100" SS="300" PFA="1" PFB="1" PFC="1" PFS="1" FR="50" WPP="116" WPN="116" WQP="116" WQN="116" IStatus="FFFF" EventTime="0">
         </Node>
       </Node>
     </Node>
-    <Node Name="高压G10表" PID="30000" MID="7" UA="220" UB="220" UC="220" UAB="380" UBC="380" UCA="380" IA="24" IB="24"
-          IC="24"
-          PA="1200" PB="1200" PC="1200" PS="3600" QA="1200" QB="1200" QC="1200" QS="3600" SA="1200" SB="1200" SC="1200"
-          SS="3600" PFA="1" PFB="1" PFC="1" PFS="1" FR="50" WPP="2710" WPN="2710" WQP="2710" WQN="2710" IStatus="FFFF"
-          EventTime="0">
-      <Node Name="低压3-1表" PID="30000" MID="32" UA="220" UB="220" UC="220" UAB="380" UBC="380" UCA="380" IA="24" IB="24"
-            IC="24"
-            PA="1200" PB="1200" PC="1200" PS="3600" QA="1200" QB="1200" QC="1200" QS="3600" SA="1200" SB="1200"
-            SC="1200"
-            SS="3600" PFA="1" PFB="1" PFC="1" PFS="1" FR="50" WPP="2710" WPN="2710" WQP="2710" WQN="2710"
-            IStatus="FFFF"
-            EventTime="0">
-        <Node Name="低压3-3表" PID="30000" MID="33" UA="220" UB="220" UC="220" UAB="380" UBC="380" UCA="380" IA="24"
-              IB="24" IC="24"
-              PA="1200" PB="1200" PC="1200" PS="3600" QA="1200" QB="1200" QC="1200" QS="3600" SA="1200" SB="1200"
-              SC="1200"
-              SS="3600" PFA="1" PFB="1" PFC="1" PFS="1" FR="50" WPP="2710" WPN="2710" WQP="2710" WQN="2710"
-              IStatus="FFFF"
-              EventTime="0">
-
+    <Node Name="高压G10表" PID="30000" MID="7" UA="220" UB="220" UC="220" UAB="380" UBC="380" UCA="380" IA="10" IB="10" IC="10" PA="500" PB="500" PC="500" PS="1500" QA="500" QB="500" QC="500" QS="1500" SA="500" SB="500" SC="500" SS="1500" PFA="1" PFB="1" PFC="1" PFS="1" FR="50" WPP="580" WPN="580" WQP="580" WQN="580" IStatus="FFFF" EventTime="0">
+      <Node Name="低压3-1表" PID="30000" MID="32" UA="220" UB="220" UC="220" UAB="380" UBC="380" UCA="380" IA="10" IB="10" IC="10" PA="500" PB="500" PC="500" PS="1500" QA="500" QB="500" QC="500" QS="1500" SA="500" SB="500" SC="500" SS="1500" PFA="1" PFB="1" PFC="1" PFS="1" FR="50" WPP="580" WPN="580" WQP="580" WQN="580" IStatus="FFFF" EventTime="0">
+        <Node Name="低压3-3表" PID="30000" MID="33" UA="220" UB="220" UC="220" UAB="380" UBC="380" UCA="380" IA="2" IB="2" IC="2" PA="100" PB="100" PC="100" PS="300" QA="100" QB="100" QC="100" QS="300" SA="100" SB="100" SC="100" SS="300" PFA="1" PFB="1" PFC="1" PFS="1" FR="50" WPP="116" WPN="116" WQP="116" WQN="116" IStatus="FFFF" EventTime="0">
         </Node>
-        <Node Name="低压3-4表" PID="30000" MID="34" UA="220" UB="220" UC="220" UAB="380" UBC="380" UCA="380" IA="24"
-              IB="24" IC="24"
-              PA="1200" PB="1200" PC="1200" PS="3600" QA="1200" QB="1200" QC="1200" QS="3600" SA="1200" SB="1200"
-              SC="1200"
-              SS="3600" PFA="1" PFB="1" PFC="1" PFS="1" FR="50" WPP="2710" WPN="2710" WQP="2710" WQN="2710"
-              IStatus="FFFF"
-              EventTime="0">
-          <Node Name="低压3-4-19表" PID="30000" MID="35" UA="220" UB="220" UC="220" UAB="380" UBC="380" UCA="380" IA="24"
-                IB="24" IC="24"
-                PA="1200" PB="1200" PC="1200" PS="3600" QA="1200" QB="1200" QC="1200" QS="3600" SA="1200" SB="1200"
-                SC="1200"
-                SS="3600" PFA="1" PFB="1" PFC="1" PFS="1" FR="50" WPP="2710" WPN="2710" WQP="2710" WQN="2710"
-                IStatus="FFFF"
-                EventTime="0">
-
+        <Node Name="低压3-4表" PID="30000" MID="34" UA="220" UB="220" UC="220" UAB="380" UBC="380" UCA="380" IA="8" IB="8" IC="8" PA="400" PB="400" PC="400" PS="1200" QA="400" QB="400" QC="400" QS="1200" SA="400" SB="400" SC="400" SS="1200" PFA="1" PFB="1" PFC="1" PFS="1" FR="50" WPP="464" WPN="464" WQP="464" WQN="464" IStatus="FFFF" EventTime="0">
+          <Node Name="低压3-4-19表" PID="30000" MID="35" UA="220" UB="220" UC="220" UAB="380" UBC="380" UCA="380" IA="2" IB="2" IC="2" PA="100" PB="100" PC="100" PS="300" QA="100" QB="100" QC="100" QS="300" SA="100" SB="100" SC="100" SS="300" PFA="1" PFB="1" PFC="1" PFS="1" FR="50" WPP="116" WPN="116" WQP="116" WQN="116" IStatus="FFFF" EventTime="0">
           </Node>
-          <Node Name="低压3-4-20表" PID="30000" MID="36" UA="220" UB="220" UC="220" UAB="380" UBC="380" UCA="380" IA="24"
-                IB="24" IC="24"
-                PA="1200" PB="1200" PC="1200" PS="3600" QA="1200" QB="1200" QC="1200" QS="3600" SA="1200" SB="1200"
-                SC="1200"
-                SS="3600" PFA="1" PFB="1" PFC="1" PFS="1" FR="50" WPP="2710" WPN="2710" WQP="2710" WQN="2710"
-                IStatus="FFFF"
-                EventTime="0">
-
+          <Node Name="低压3-4-20表" PID="30000" MID="36" UA="220" UB="220" UC="220" UAB="380" UBC="380" UCA="380" IA="2" IB="2" IC="2" PA="100" PB="100" PC="100" PS="300" QA="100" QB="100" QC="100" QS="300" SA="100" SB="100" SC="100" SS="300" PFA="1" PFB="1" PFC="1" PFS="1" FR="50" WPP="116" WPN="116" WQP="116" WQN="116" IStatus="FFFF" EventTime="0">
           </Node>
-          <Node Name="低压3-4-21表" PID="30000" MID="37" UA="220" UB="220" UC="220" UAB="380" UBC="380" UCA="380" IA="24"
-                IB="24" IC="24"
-                PA="1200" PB="1200" PC="1200" PS="3600" QA="1200" QB="1200" QC="1200" QS="3600" SA="1200" SB="1200"
-                SC="1200"
-                SS="3600" PFA="1" PFB="1" PFC="1" PFS="1" FR="50" WPP="2710" WPN="2710" WQP="2710" WQN="2710"
-                IStatus="FFFF"
-                EventTime="0">
-
+          <Node Name="低压3-4-21表" PID="30000" MID="37" UA="220" UB="220" UC="220" UAB="380" UBC="380" UCA="380" IA="2" IB="2" IC="2" PA="100" PB="100" PC="100" PS="300" QA="100" QB="100" QC="100" QS="300" SA="100" SB="100" SC="100" SS="300" PFA="1" PFB="1" PFC="1" PFS="1" FR="50" WPP="116" WPN="116" WQP="116" WQN="116" IStatus="FFFF" EventTime="0">
           </Node>
-          <Node Name="低压3-4-22表" PID="30000" MID="38" UA="220" UB="220" UC="220" UAB="380" UBC="380" UCA="380" IA="24"
-                IB="24" IC="24"
-                PA="1200" PB="1200" PC="1200" PS="3600" QA="1200" QB="1200" QC="1200" QS="3600" SA="1200" SB="1200"
-                SC="1200"
-                SS="3600" PFA="1" PFB="1" PFC="1" PFS="1" FR="50" WPP="2710" WPN="2710" WQP="2710" WQN="2710"
-                IStatus="FFFF"
-                EventTime="0">
-
+          <Node Name="低压3-4-22表" PID="30000" MID="38" UA="220" UB="220" UC="220" UAB="380" UBC="380" UCA="380" IA="2" IB="2" IC="2" PA="100" PB="100" PC="100" PS="300" QA="100" QB="100" QC="100" QS="300" SA="100" SB="100" SC="100" SS="300" PFA="1" PFB="1" PFC="1" PFS="1" FR="50" WPP="116" WPN="116" WQP="116" WQN="116" IStatus="FFFF" EventTime="0">
           </Node>
         </Node>
       </Node>
     </Node>
   </Node>
-  <Node Name="高压G7表"  PID="30000" MID="4" UA="220" UB="220" UC="220" UAB="380" UBC="380" UCA="380" IA="24" IB="24"
-        IC="24"
-        PA="1200" PB="1200" PC="1200" PS="3600" QA="1200" QB="1200" QC="1200" QS="3600" SA="1200" SB="1200" SC="1200"
-        SS="3600" PFA="1" PFB="1" PFC="1" PFS="1" FR="50" WPP="2710" WPN="2710" WQP="2710" WQN="2710" IStatus="FFFF"
-        EventTime="0">
-    <Node Name="高压G11表" PID="30000" MID="5" UA="220" UB="220" UC="220" UAB="380" UBC="380" UCA="380" IA="24" IB="24"
-          IC="24"
-          PA="1200" PB="1200" PC="1200" PS="3600" QA="1200" QB="1200" QC="1200" QS="3600" SA="1200" SB="1200" SC="1200"
-          SS="3600" PFA="1" PFB="1" PFC="1" PFS="1" FR="50" WPP="2710" WPN="2710" WQP="2710" WQN="2710" IStatus="FFFF"
-          EventTime="0">
-      <Node Name="高压G13表" PID="30000" MID="8" UA="220" UB="220" UC="220" UAB="380" UBC="380" UCA="380" IA="24" IB="24"
-            IC="24"
-            PA="1200" PB="1200" PC="1200" PS="3600" QA="1200" QB="1200" QC="1200" QS="3600" SA="1200" SB="1200"
-            SC="1200"
-            SS="3600" PFA="1" PFB="1" PFC="1" PFS="1" FR="50" WPP="2710" WPN="2710" WQP="2710" WQN="2710"
-            IStatus="FFFF"
-            EventTime="0">
-
+  <Node Name="高压G7表" PID="30000" MID="4" UA="220" UB="220" UC="220" UAB="380" UBC="380" UCA="380" IA="26" IB="26" IC="26" PA="1300" PB="1300" PC="1300" PS="3900" QA="1300" QB="1300" QC="1300" QS="3900" SA="1300" SB="1300" SC="1300" SS="3900" PFA="1" PFB="1" PFC="1" PFS="1" FR="50" WPP="1508" WPN="1508" WQP="1508" WQN="1508" IStatus="FFFF" EventTime="0">
+    <Node Name="高压G11表" PID="30000" MID="5" UA="220" UB="220" UC="220" UAB="380" UBC="380" UCA="380" IA="26" IB="26" IC="26" PA="1300" PB="1300" PC="1300" PS="3900" QA="1300" QB="1300" QC="1300" QS="3900" SA="1300" SB="1300" SC="1300" SS="3900" PFA="1" PFB="1" PFC="1" PFS="1" FR="50" WPP="1508" WPN="1508" WQP="1508" WQN="1508" IStatus="FFFF" EventTime="0">
+      <Node Name="高压G13表" PID="30000" MID="8" UA="220" UB="220" UC="220" UAB="380" UBC="380" UCA="380" IA="2" IB="2" IC="2" PA="100" PB="100" PC="100" PS="300" QA="100" QB="100" QC="100" QS="300" SA="100" SB="100" SC="100" SS="300" PFA="1" PFB="1" PFC="1" PFS="1" FR="50" WPP="116" WPN="116" WQP="116" WQN="116" IStatus="FFFF" EventTime="0">
       </Node>
-      <Node Name="高压G14表" PID="30000" MID="9" UA="220" UB="220" UC="220" UAB="380" UBC="380" UCA="380" IA="24" IB="24"
-            IC="24"
-            PA="1200" PB="1200" PC="1200" PS="3600" QA="1200" QB="1200" QC="1200" QS="3600" SA="1200" SB="1200"
-            SC="1200"
-            SS="3600" PFA="1" PFB="1" PFC="1" PFS="1" FR="50" WPP="2710" WPN="2710" WQP="2710" WQN="2710"
-            IStatus="FFFF"
-            EventTime="0">
-        <Node Name="低压5-1表" PID="30000" MID="11" UA="220" UB="220" UC="220" UAB="380" UBC="380" UCA="380" IA="24"
-              IB="24"
-              IC="24"
-              PA="1200" PB="1200" PC="1200" PS="3600" QA="1200" QB="1200" QC="1200" QS="3600" SA="1200" SB="1200"
-              SC="1200"
-              SS="3600" PFA="1" PFB="1" PFC="1" PFS="1" FR="50" WPP="2710" WPN="2710" WQP="2710" WQN="2710"
-              IStatus="FFFF"
-              EventTime="0">
-          <Node Name="低压5-2表" PID="30000" MID="12" UA="220" UB="220" UC="220" UAB="380" UBC="380" UCA="380" IA="24"
-                IB="24"
-                IC="24"
-                PA="1200" PB="1200" PC="1200" PS="3600" QA="1200" QB="1200" QC="1200" QS="3600" SA="1200" SB="1200"
-                SC="1200"
-                SS="3600" PFA="1" PFB="1" PFC="1" PFS="1" FR="50" WPP="2710" WPN="2710" WQP="2710" WQN="2710"
-                IStatus="FFFF"
-                EventTime="0">
-            <Node Name="低压5-2-15表" PID="30000" MID="13" UA="220" UB="220" UC="220" UAB="380" UBC="380" UCA="380"
-                  IA="24" IB="24"
-                  IC="24"
-                  PA="1200" PB="1200" PC="1200" PS="3600" QA="1200" QB="1200" QC="1200" QS="3600" SA="1200" SB="1200"
-                  SC="1200"
-                  SS="3600" PFA="1" PFB="1" PFC="1" PFS="1" FR="50" WPP="2710" WPN="2710" WQP="2710" WQN="2710"
-                  IStatus="FFFF"
-                  EventTime="0">
-
+      <Node Name="高压G14表" PID="30000" MID="9" UA="220" UB="220" UC="220" UAB="380" UBC="380" UCA="380" IA="12" IB="12" IC="12" PA="600" PB="600" PC="600" PS="1800" QA="600" QB="600" QC="600" QS="1800" SA="600" SB="600" SC="600" SS="1800" PFA="1" PFB="1" PFC="1" PFS="1" FR="50" WPP="696" WPN="696" WQP="696" WQN="696" IStatus="FFFF" EventTime="0">
+        <Node Name="低压5-1表" PID="30000" MID="11" UA="220" UB="220" UC="220" UAB="380" UBC="380" UCA="380" IA="12" IB="12" IC="12" PA="600" PB="600" PC="600" PS="1800" QA="600" QB="600" QC="600" QS="1800" SA="600" SB="600" SC="600" SS="1800" PFA="1" PFB="1" PFC="1" PFS="1" FR="50" WPP="696" WPN="696" WQP="696" WQN="696" IStatus="FFFF" EventTime="0">
+          <Node Name="低压5-2表" PID="30000" MID="12" UA="220" UB="220" UC="220" UAB="380" UBC="380" UCA="380" IA="6" IB="6" IC="6" PA="300" PB="300" PC="300" PS="900" QA="300" QB="300" QC="300" QS="900" SA="300" SB="300" SC="300" SS="900" PFA="1" PFB="1" PFC="1" PFS="1" FR="50" WPP="348" WPN="348" WQP="348" WQN="348" IStatus="FFFF" EventTime="0">
+            <Node Name="低压5-2-15表" PID="30000" MID="13" UA="220" UB="220" UC="220" UAB="380" UBC="380" UCA="380" IA="2" IB="2" IC="2" PA="100" PB="100" PC="100" PS="300" QA="100" QB="100" QC="100" QS="300" SA="100" SB="100" SC="100" SS="300" PFA="1" PFB="1" PFC="1" PFS="1" FR="50" WPP="116" WPN="116" WQP="116" WQN="116" IStatus="FFFF" EventTime="0">
             </Node>
-            <Node Name="低压5-2-16表" PID="30000" MID="14" UA="220" UB="220" UC="220" UAB="380" UBC="380" UCA="380"
-                  IA="24" IB="24"
-                  IC="24"
-                  PA="1200" PB="1200" PC="1200" PS="3600" QA="1200" QB="1200" QC="1200" QS="3600" SA="1200" SB="1200"
-                  SC="1200"
-                  SS="3600" PFA="1" PFB="1" PFC="1" PFS="1" FR="50" WPP="2710" WPN="2710" WQP="2710" WQN="2710"
-                  IStatus="FFFF"
-                  EventTime="0">
-
+            <Node Name="低压5-2-16表" PID="30000" MID="14" UA="220" UB="220" UC="220" UAB="380" UBC="380" UCA="380" IA="2" IB="2" IC="2" PA="100" PB="100" PC="100" PS="300" QA="100" QB="100" QC="100" QS="300" SA="100" SB="100" SC="100" SS="300" PFA="1" PFB="1" PFC="1" PFS="1" FR="50" WPP="116" WPN="116" WQP="116" WQN="116" IStatus="FFFF" EventTime="0">
             </Node>
-            <Node Name="低压5-2-17表" PID="30000" MID="15" UA="220" UB="220" UC="220" UAB="380" UBC="380" UCA="380"
-                  IA="24" IB="24"
-                  IC="24"
-                  PA="1200" PB="1200" PC="1200" PS="3600" QA="1200" QB="1200" QC="1200" QS="3600" SA="1200" SB="1200"
-                  SC="1200"
-                  SS="3600" PFA="1" PFB="1" PFC="1" PFS="1" FR="50" WPP="2710" WPN="2710" WQP="2710" WQN="2710"
-                  IStatus="FFFF"
-                  EventTime="0">
-
+            <Node Name="低压5-2-17表" PID="30000" MID="15" UA="220" UB="220" UC="220" UAB="380" UBC="380" UCA="380" IA="2" IB="2" IC="2" PA="100" PB="100" PC="100" PS="300" QA="100" QB="100" QC="100" QS="300" SA="100" SB="100" SC="100" SS="300" PFA="1" PFB="1" PFC="1" PFS="1" FR="50" WPP="116" WPN="116" WQP="116" WQN="116" IStatus="FFFF" EventTime="0">
             </Node>
           </Node>
-          <Node Name="低压5-5表" PID="30000" MID="16" UA="220" UB="220" UC="220" UAB="380" UBC="380" UCA="380" IA="24"
-                IB="24"
-                IC="24"
-                PA="1200" PB="1200" PC="1200" PS="3600" QA="1200" QB="1200" QC="1200" QS="3600" SA="1200" SB="1200"
-                SC="1200"
-                SS="3600" PFA="1" PFB="1" PFC="1" PFS="1" FR="50" WPP="2710" WPN="2710" WQP="2710" WQN="2710"
-                IStatus="FFFF"
-                EventTime="0">
-            <Node Name="低压5-5-15表" PID="30000" MID="17" UA="220" UB="220" UC="220" UAB="380" UBC="380" UCA="380"
-                  IA="24" IB="24"
-                  IC="24"
-                  PA="1200" PB="1200" PC="1200" PS="3600" QA="1200" QB="1200" QC="1200" QS="3600" SA="1200" SB="1200"
-                  SC="1200"
-                  SS="3600" PFA="1" PFB="1" PFC="1" PFS="1" FR="50" WPP="2710" WPN="2710" WQP="2710" WQN="2710"
-                  IStatus="FFFF"
-                  EventTime="0">
-
+          <Node Name="低压5-5表" PID="30000" MID="16" UA="220" UB="220" UC="220" UAB="380" UBC="380" UCA="380" IA="6" IB="6" IC="6" PA="300" PB="300" PC="300" PS="900" QA="300" QB="300" QC="300" QS="900" SA="300" SB="300" SC="300" SS="900" PFA="1" PFB="1" PFC="1" PFS="1" FR="50" WPP="348" WPN="348" WQP="348" WQN="348" IStatus="FFFF" EventTime="0">
+            <Node Name="低压5-5-15表" PID="30000" MID="17" UA="220" UB="220" UC="220" UAB="380" UBC="380" UCA="380" IA="2" IB="2" IC="2" PA="100" PB="100" PC="100" PS="300" QA="100" QB="100" QC="100" QS="300" SA="100" SB="100" SC="100" SS="300" PFA="1" PFB="1" PFC="1" PFS="1" FR="50" WPP="116" WPN="116" WQP="116" WQN="116" IStatus="FFFF" EventTime="0">
             </Node>
-            <Node Name="低压5-5-16表" PID="30000" MID="18" UA="220" UB="220" UC="220" UAB="380" UBC="380" UCA="380"
-                  IA="24" IB="24"
-                  IC="24"
-                  PA="1200" PB="1200" PC="1200" PS="3600" QA="1200" QB="1200" QC="1200" QS="3600" SA="1200" SB="1200"
-                  SC="1200"
-                  SS="3600" PFA="1" PFB="1" PFC="1" PFS="1" FR="50" WPP="2710" WPN="2710" WQP="2710" WQN="2710"
-                  IStatus="FFFF"
-                  EventTime="0">
-
+            <Node Name="低压5-5-16表" PID="30000" MID="18" UA="220" UB="220" UC="220" UAB="380" UBC="380" UCA="380" IA="2" IB="2" IC="2" PA="100" PB="100" PC="100" PS="300" QA="100" QB="100" QC="100" QS="300" SA="100" SB="100" SC="100" SS="300" PFA="1" PFB="1" PFC="1" PFS="1" FR="50" WPP="116" WPN="116" WQP="116" WQN="116" IStatus="FFFF" EventTime="0">
             </Node>
-            <Node Name="低压5-5-17表" PID="30000" MID="19" UA="220" UB="220" UC="220" UAB="380" UBC="380" UCA="380"
-                  IA="24" IB="24"
-                  IC="24"
-                  PA="1200" PB="1200" PC="1200" PS="3600" QA="1200" QB="1200" QC="1200" QS="3600" SA="1200" SB="1200"
-                  SC="1200"
-                  SS="3600" PFA="1" PFB="1" PFC="1" PFS="1" FR="50" WPP="2710" WPN="2710" WQP="2710" WQN="2710"
-                  IStatus="FFFF"
-                  EventTime="0">
-
+            <Node Name="低压5-5-17表" PID="30000" MID="19" UA="220" UB="220" UC="220" UAB="380" UBC="380" UCA="380" IA="2" IB="2" IC="2" PA="100" PB="100" PC="100" PS="300" QA="100" QB="100" QC="100" QS="300" SA="100" SB="100" SC="100" SS="300" PFA="1" PFB="1" PFC="1" PFS="1" FR="50" WPP="116" WPN="116" WQP="116" WQN="116" IStatus="FFFF" EventTime="0">
             </Node>
           </Node>
         </Node>
       </Node>
-      <Node Name="高压G15表" PID="30000" MID="10" UA="220" UB="220" UC="220" UAB="380" UBC="380" UCA="380" IA="24" IB="24"
-            IC="24"
-            PA="1200" PB="1200" PC="1200" PS="3600" QA="1200" QB="1200" QC="1200" QS="3600" SA="1200" SB="1200"
-            SC="1200"
-            SS="3600" PFA="1" PFB="1" PFC="1" PFS="1" FR="50" WPP="2710" WPN="2710" WQP="2710" WQN="2710"
-            IStatus="FFFF"
-            EventTime="0">
-        <Node Name="低压4-1表" PID="30000" MID="20" UA="220" UB="220" UC="220" UAB="380" UBC="380" UCA="380" IA="24"
-              IB="24"
-              IC="24"
-              PA="1200" PB="1200" PC="1200" PS="3600" QA="1200" QB="1200" QC="1200" QS="3600" SA="1200" SB="1200"
-              SC="1200"
-              SS="3600" PFA="1" PFB="1" PFC="1" PFS="1" FR="50" WPP="2710" WPN="2710" WQP="2710" WQN="2710"
-              IStatus="FFFF"
-              EventTime="0">
-          <Node Name="低压4-2表" PID="30000" MID="21" UA="220" UB="220" UC="220" UAB="380" UBC="380" UCA="380" IA="24"
-                IB="24"
-                IC="24"
-                PA="1200" PB="1200" PC="1200" PS="3600" QA="1200" QB="1200" QC="1200" QS="3600" SA="1200" SB="1200"
-                SC="1200"
-                SS="3600" PFA="1" PFB="1" PFC="1" PFS="1" FR="50" WPP="2710" WPN="2710" WQP="2710" WQN="2710"
-                IStatus="FFFF"
-                EventTime="0">
-            <Node Name="低压4-2-16表" PID="30000" MID="22" UA="220" UB="220" UC="220" UAB="380" UBC="380" UCA="380"
-                  IA="24" IB="24"
-                  IC="24"
-                  PA="1200" PB="1200" PC="1200" PS="3600" QA="1200" QB="1200" QC="1200" QS="3600" SA="1200" SB="1200"
-                  SC="1200"
-                  SS="3600" PFA="1" PFB="1" PFC="1" PFS="1" FR="50" WPP="2710" WPN="2710" WQP="2710" WQN="2710"
-                  IStatus="FFFF"
-                  EventTime="0">
-
+      <Node Name="高压G15表" PID="30000" MID="10" UA="220" UB="220" UC="220" UAB="380" UBC="380" UCA="380" IA="12" IB="12" IC="12" PA="600" PB="600" PC="600" PS="1800" QA="600" QB="600" QC="600" QS="1800" SA="600" SB="600" SC="600" SS="1800" PFA="1" PFB="1" PFC="1" PFS="1" FR="50" WPP="696" WPN="696" WQP="696" WQN="696" IStatus="FFFF" EventTime="0">
+        <Node Name="低压4-1表" PID="30000" MID="20" UA="220" UB="220" UC="220" UAB="380" UBC="380" UCA="380" IA="12" IB="12" IC="12" PA="600" PB="600" PC="600" PS="1800" QA="600" QB="600" QC="600" QS="1800" SA="600" SB="600" SC="600" SS="1800" PFA="1" PFB="1" PFC="1" PFS="1" FR="50" WPP="696" WPN="696" WQP="696" WQN="696" IStatus="FFFF" EventTime="0">
+          <Node Name="低压4-2表" PID="30000" MID="21" UA="220" UB="220" UC="220" UAB="380" UBC="380" UCA="380" IA="6" IB="6" IC="6" PA="300" PB="300" PC="300" PS="900" QA="300" QB="300" QC="300" QS="900" SA="300" SB="300" SC="300" SS="900" PFA="1" PFB="1" PFC="1" PFS="1" FR="50" WPP="348" WPN="348" WQP="348" WQN="348" IStatus="FFFF" EventTime="0">
+            <Node Name="低压4-2-16表" PID="30000" MID="22" UA="220" UB="220" UC="220" UAB="380" UBC="380" UCA="380" IA="2" IB="2" IC="2" PA="100" PB="100" PC="100" PS="300" QA="100" QB="100" QC="100" QS="300" SA="100" SB="100" SC="100" SS="300" PFA="1" PFB="1" PFC="1" PFS="1" FR="50" WPP="116" WPN="116" WQP="116" WQN="116" IStatus="FFFF" EventTime="0">
             </Node>
-            <Node Name="低压4-2-17表" PID="30000" MID="23" UA="220" UB="220" UC="220" UAB="380" UBC="380" UCA="380"
-                  IA="24" IB="24"
-                  IC="24"
-                  PA="1200" PB="1200" PC="1200" PS="3600" QA="1200" QB="1200" QC="1200" QS="3600" SA="1200" SB="1200"
-                  SC="1200"
-                  SS="3600" PFA="1" PFB="1" PFC="1" PFS="1" FR="50" WPP="2710" WPN="2710" WQP="2710" WQN="2710"
-                  IStatus="FFFF"
-                  EventTime="0">
-
+            <Node Name="低压4-2-17表" PID="30000" MID="23" UA="220" UB="220" UC="220" UAB="380" UBC="380" UCA="380" IA="2" IB="2" IC="2" PA="100" PB="100" PC="100" PS="300" QA="100" QB="100" QC="100" QS="300" SA="100" SB="100" SC="100" SS="300" PFA="1" PFB="1" PFC="1" PFS="1" FR="50" WPP="116" WPN="116" WQP="116" WQN="116" IStatus="FFFF" EventTime="0">
             </Node>
-            <Node Name="低压4-2-15表" PID="30000" MID="24" UA="220" UB="220" UC="220" UAB="380" UBC="380" UCA="380"
-                  IA="24" IB="24"
-                  IC="24"
-                  PA="1200" PB="1200" PC="1200" PS="3600" QA="1200" QB="1200" QC="1200" QS="3600" SA="1200" SB="1200"
-                  SC="1200"
-                  SS="3600" PFA="1" PFB="1" PFC="1" PFS="1" FR="50" WPP="2710" WPN="2710" WQP="2710" WQN="2710"
-                  IStatus="FFFF"
-                  EventTime="0">
-
+            <Node Name="低压4-2-15表" PID="30000" MID="24" UA="220" UB="220" UC="220" UAB="380" UBC="380" UCA="380" IA="2" IB="2" IC="2" PA="100" PB="100" PC="100" PS="300" QA="100" QB="100" QC="100" QS="300" SA="100" SB="100" SC="100" SS="300" PFA="1" PFB="1" PFC="1" PFS="1" FR="50" WPP="116" WPN="116" WQP="116" WQN="116" IStatus="FFFF" EventTime="0">
             </Node>
           </Node>
-          <Node Name="低压4-3表" PID="30000" MID="25" UA="220" UB="220" UC="220" UAB="380" UBC="380" UCA="380" IA="24"
-                IB="24"
-                IC="24"
-                PA="1200" PB="1200" PC="1200" PS="3600" QA="1200" QB="1200" QC="1200" QS="3600" SA="1200" SB="1200"
-                SC="1200"
-                SS="3600" PFA="1" PFB="1" PFC="1" PFS="1" FR="50" WPP="2710" WPN="2710" WQP="2710" WQN="2710"
-                IStatus="FFFF"
-                EventTime="0">
-            <Node Name="低压4-3-16表" PID="30000" MID="26" UA="220" UB="220" UC="220" UAB="380" UBC="380" UCA="380"
-                  IA="24" IB="24"
-                  IC="24"
-                  PA="1200" PB="1200" PC="1200" PS="3600" QA="1200" QB="1200" QC="1200" QS="3600" SA="1200" SB="1200"
-                  SC="1200"
-                  SS="3600" PFA="1" PFB="1" PFC="1" PFS="1" FR="50" WPP="2710" WPN="2710" WQP="2710" WQN="2710"
-                  IStatus="FFFF"
-                  EventTime="0">
-
+          <Node Name="低压4-3表" PID="30000" MID="25" UA="220" UB="220" UC="220" UAB="380" UBC="380" UCA="380" IA="6" IB="6" IC="6" PA="300" PB="300" PC="300" PS="900" QA="300" QB="300" QC="300" QS="900" SA="300" SB="300" SC="300" SS="900" PFA="1" PFB="1" PFC="1" PFS="1" FR="50" WPP="348" WPN="348" WQP="348" WQN="348" IStatus="FFFF" EventTime="0">
+            <Node Name="低压4-3-16表" PID="30000" MID="26" UA="220" UB="220" UC="220" UAB="380" UBC="380" UCA="380" IA="2" IB="2" IC="2" PA="100" PB="100" PC="100" PS="300" QA="100" QB="100" QC="100" QS="300" SA="100" SB="100" SC="100" SS="300" PFA="1" PFB="1" PFC="1" PFS="1" FR="50" WPP="116" WPN="116" WQP="116" WQN="116" IStatus="FFFF" EventTime="0">
             </Node>
-            <Node Name="低压4-3-17表" PID="30000" MID="27" UA="220" UB="220" UC="220" UAB="380" UBC="380" UCA="380"
-                  IA="24" IB="24"
-                  IC="24"
-                  PA="1200" PB="1200" PC="1200" PS="3600" QA="1200" QB="1200" QC="1200" QS="3600" SA="1200" SB="1200"
-                  SC="1200"
-                  SS="3600" PFA="1" PFB="1" PFC="1" PFS="1" FR="50" WPP="2710" WPN="2710" WQP="2710" WQN="2710"
-                  IStatus="FFFF"
-                  EventTime="0">
-
+            <Node Name="低压4-3-17表" PID="30000" MID="27" UA="220" UB="220" UC="220" UAB="380" UBC="380" UCA="380" IA="2" IB="2" IC="2" PA="100" PB="100" PC="100" PS="300" QA="100" QB="100" QC="100" QS="300" SA="100" SB="100" SC="100" SS="300" PFA="1" PFB="1" PFC="1" PFS="1" FR="50" WPP="116" WPN="116" WQP="116" WQN="116" IStatus="FFFF" EventTime="0">
             </Node>
-            <Node Name="低压4-3-15表" PID="30000" MID="28" UA="220" UB="220" UC="220" UAB="380" UBC="380" UCA="380"
-                  IA="24" IB="24"
-                  IC="24"
-                  PA="1200" PB="1200" PC="1200" PS="3600" QA="1200" QB="1200" QC="1200" QS="3600" SA="1200" SB="1200"
-                  SC="1200"
-                  SS="3600" PFA="1" PFB="1" PFC="1" PFS="1" FR="50" WPP="2710" WPN="2710" WQP="2710" WQN="2710"
-                  IStatus="FFFF"
-                  EventTime="0">
-
+            <Node Name="低压4-3-15表" PID="30000" MID="28" UA="220" UB="220" UC="220" UAB="380" UBC="380" UCA="380" IA="2" IB="2" IC="2" PA="100" PB="100" PC="100" PS="300" QA="100" QB="100" QC="100" QS="300" SA="100" SB="100" SC="100" SS="300" PFA="1" PFB="1" PFC="1" PFS="1" FR="50" WPP="116" WPN="116" WQP="116" WQN="116" IStatus="FFFF" EventTime="0">
             </Node>
           </Node>
         </Node>
       </Node>
     </Node>
   </Node>
-</Node> 
+</Node>

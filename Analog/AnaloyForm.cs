@@ -110,7 +110,7 @@ namespace Analog
         {
             if (!node.HasChildren)
             {
-                var result = data.Where(d => d.NodeID.ToString() == node.GetValue("NodeID").ToString()).ToList();
+                var result = data.Where(d => d.MID.ToString() == node.GetValue("MID").ToString()).ToList();
                 ElectricityOriginalData childData = result[0] as ElectricityOriginalData;
                 
                 if (increase_or_not)
@@ -124,7 +124,7 @@ namespace Analog
             }
             else
             {
-                var result = data.Where(d => d.NodeID.ToString() == node.GetValue("NodeID").ToString()).ToList();
+                var result = data.Where(d => d.MID.ToString() == node.GetValue("MID").ToString()).ToList();
                 ElectricityOriginalData childData = result[0] as ElectricityOriginalData;
                 childData.ClearData();
                 foreach (TreeListNode treeListNode in node.Nodes)
@@ -275,9 +275,9 @@ namespace Analog
 
         private void NodeTreeCtr_Click(object sender, EventArgs e)
         {
-            int Nodeid = int.Parse(NodeTreeCtr.FocusedNode.GetValue("NodeID").ToString());
+            int MID = int.Parse(NodeTreeCtr.FocusedNode.GetValue("MID").ToString());
             var selectData =
-                data.Where(d => d.NodeID == Nodeid).ToList();
+                data.Where(d => d.MID == MID).ToList();
             if (selectData == null) return;
             selectedData = selectData[0];
             ChangeTextBoxs(selectedData);

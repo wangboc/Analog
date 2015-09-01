@@ -55,7 +55,7 @@ namespace Analog
         protected DateTime Time { get; set; }
 
 
-        protected UpdateDataDelegate _updateDataData;
+        protected UpdateDataDelegate _UpdateDataDelegate;
 
 
         public virtual void Run()
@@ -64,13 +64,13 @@ namespace Analog
 
         public void UpdateDataByDelegate(string message)
         {
-            _updateDataData(message);
+            _UpdateDataDelegate(message);
         }
 
         public TaskBase(String name, ConditionBase condition, UpdateDataDelegate returnFuc)
         {
             this.Name = name;
-            this._updateDataData = returnFuc;
+            this._UpdateDataDelegate = returnFuc;
             this.Condition = condition;
             this.Time = DateTime.Now;
         }
@@ -156,10 +156,10 @@ namespace Analog
             message += data.PFC + ",";
             message += data.PFS + ",";
             message += data.FR + ",";
-            message += data.WPP + ",";
-            message += data.WPN + ",";
-            message += data.WQP + ",";
-            message += data.WQN + ",";
+            message += data.WPP.ToString("0.00") + ",";
+            message += data.WPN.ToString("0.00") + ",";
+            message += data.WQP.ToString("0.00") + ",";
+            message += data.WQN.ToString("0.00") + ",";
             message += data.IStatus + ",";
 
             message += "]";

@@ -60,8 +60,7 @@ namespace Analog
             this.IB = 0;
             this.IC = 0;
             this.PA = 0;
-            this.PB = 0;
-            this.PC = 0;
+            this.PB = 0;this.PC = 0;
             this.PS = 0;
             this.QA = 0;
             this.QB = 0;
@@ -87,8 +86,7 @@ namespace Analog
         public int ParentID { get; set; }
 
         public string Name { get; set; }
-        public int NodeID { get; set; }
-
+       
         /// <summary>
         /// //项目编号
         /// </summary>
