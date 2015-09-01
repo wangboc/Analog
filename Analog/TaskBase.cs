@@ -17,14 +17,13 @@ namespace Analog
         public DateTime StartTime { get; private set; }
         public DateTime EndTime { get; private set; }
         public int Mid { get; private set; }
-        public int NodeId { get; set; }
+
 
         public FilterCondition(DateTime startTime, DateTime endTime, int mid)
         {
             StartTime = startTime;
             EndTime = endTime;
-            NodeId = mid;
-            Mid = NodeId;
+            Mid = mid;
         }
     }
 
@@ -127,33 +126,31 @@ namespace Analog
 
         public static string FormatMessage(ElectricityOriginalData data)
         {
-            //[,T,1,12345,1,224,224,224,385,386,387,2,3,4,400,401,402,1200,400,400,400,1200,300,300,300,900,500,500,500,1500,50,1481,1482,1483,1484,FFFF,]
-            // [,T,1,2,6,220,220,220,380,380,380,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,FFFF,]
             string message = "";
             message += "[,T,1,";
             message += data.PID + ",";
             message += data.MID + ",";
-            message += data.UA + ",";
-            message += data.UB + ",";
-            message += data.UC + ",";
-            message += data.UAB + ",";
-            message += data.UBC + ",";
-            message += data.UCA + ",";
-            message += data.IA + ",";
-            message += data.IB + ",";
-            message += data.IC + ",";
-            message += data.PA + ",";
-            message += data.PB + ",";
-            message += data.PC + ",";
-            message += data.PS + ",";
-            message += data.QA + ",";
-            message += data.QB + ",";
-            message += data.QC + ",";
-            message += data.QS + ",";
-            message += data.SA + ",";
-            message += data.SB + ",";
-            message += data.SC + ",";
-            message += data.SS + ",";
+            message += data.UA.ToString("0.00") + ",";
+            message += data.UB.ToString("0.00") + ",";
+            message += data.UC.ToString("0.00") + ",";
+            message += data.UAB.ToString("0.00") + ",";
+            message += data.UBC.ToString("0.00") + ",";
+            message += data.UCA.ToString("0.00") + ",";
+            message += data.IA.ToString("0.00") + ",";
+            message += data.IB.ToString("0.00") + ",";
+            message += data.IC.ToString("0.00") + ",";
+            message += data.PA.ToString("0.00") + ",";
+            message += data.PB.ToString("0.00") + ",";
+            message += data.PC.ToString("0.00") + ",";
+            message += data.PS.ToString("0.00") + ",";
+            message += data.QA.ToString("0.00") + ",";
+            message += data.QB.ToString("0.00") + ",";
+            message += data.QC.ToString("0.00") + ",";
+            message += data.QS.ToString("0.00") + ",";
+            message += data.SA.ToString("0.00") + ",";
+            message += data.SB.ToString("0.00") + ",";
+            message += data.SC.ToString("0.00") + ",";
+            message += data.SS.ToString("0.00") + ",";
             message += data.PFA + ",";
             message += data.PFB + ",";
             message += data.PFC + ",";

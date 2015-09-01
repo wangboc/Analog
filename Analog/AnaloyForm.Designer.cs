@@ -28,10 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AnaloyForm));
             this.ribbon = new DevExpress.XtraBars.Ribbon.RibbonControl();
-            this.sharedImageCollection1 = new DevExpress.Utils.SharedImageCollection(this.components);
+            this.sharedImageCollection1 = new DevExpress.Utils.SharedImageCollection();
             this.StartBtn = new DevExpress.XtraBars.BarButtonItem();
             this.ClearBtn = new DevExpress.XtraBars.BarButtonItem();
             this.TimSetCtr = new DevExpress.XtraBars.BarEditItem();
@@ -132,7 +131,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.NodeTreeCtr = new DevExpress.XtraTreeList.TreeList();
-            this.notifyIcon1 = new System.Windows.Forms.NotifyIcon(this.components);
+            this.notifyIcon1 = new System.Windows.Forms.NotifyIcon();
             ((System.ComponentModel.ISupportInitialize)(this.ribbon)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.sharedImageCollection1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.sharedImageCollection1.ImageSource)).BeginInit();
@@ -177,7 +176,7 @@
             this.ribbon.ShowPageHeadersMode = DevExpress.XtraBars.Ribbon.ShowPageHeadersMode.ShowOnMultiplePages;
             this.ribbon.ShowQatLocationSelector = false;
             this.ribbon.ShowToolbarCustomizeItem = false;
-            this.ribbon.Size = new System.Drawing.Size(850, 111);
+            this.ribbon.Size = new System.Drawing.Size(850, 115);
             this.ribbon.StatusBar = this.ribbonStatusBar;
             this.ribbon.Toolbar.ShowCustomizeItem = false;
             this.ribbon.ToolbarLocation = DevExpress.XtraBars.Ribbon.RibbonQuickAccessToolbarLocation.Hidden;
@@ -352,10 +351,10 @@
             // 
             // ribbonStatusBar
             // 
-            this.ribbonStatusBar.Location = new System.Drawing.Point(0, 866);
+            this.ribbonStatusBar.Location = new System.Drawing.Point(0, 874);
             this.ribbonStatusBar.Name = "ribbonStatusBar";
             this.ribbonStatusBar.Ribbon = this.ribbon;
-            this.ribbonStatusBar.Size = new System.Drawing.Size(850, 31);
+            this.ribbonStatusBar.Size = new System.Drawing.Size(850, 23);
             // 
             // tableLayoutPanel1
             // 
@@ -369,7 +368,7 @@
             this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel2, 0, 1);
             this.tableLayoutPanel1.Controls.Add(this.NodeTreeCtr, 0, 0);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 111);
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 115);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 5;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
@@ -377,7 +376,7 @@
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 210F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(850, 755);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(850, 759);
             this.tableLayoutPanel1.TabIndex = 2;
             // 
             // richTextBoxMessage
@@ -390,7 +389,7 @@
             this.richTextBoxMessage.Name = "richTextBoxMessage";
             this.richTextBoxMessage.ReadOnly = true;
             this.tableLayoutPanel1.SetRowSpan(this.richTextBoxMessage, 5);
-            this.richTextBoxMessage.Size = new System.Drawing.Size(380, 749);
+            this.richTextBoxMessage.Size = new System.Drawing.Size(380, 753);
             this.richTextBoxMessage.TabIndex = 0;
             this.richTextBoxMessage.Text = "";
             // 
@@ -398,7 +397,7 @@
             // 
             this.tableLayoutPanel1.SetColumnSpan(this.StringFormatCtr, 2);
             this.StringFormatCtr.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.StringFormatCtr.Location = new System.Drawing.Point(3, 698);
+            this.StringFormatCtr.Location = new System.Drawing.Point(3, 702);
             this.StringFormatCtr.Name = "StringFormatCtr";
             this.StringFormatCtr.ReadOnly = true;
             this.tableLayoutPanel1.SetRowSpan(this.StringFormatCtr, 2);
@@ -493,7 +492,7 @@
             this.tableLayoutPanel2.Controls.Add(this.label1, 4, 12);
             this.tableLayoutPanel2.Controls.Add(this.textBox1, 5, 12);
             this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel2.Location = new System.Drawing.Point(3, 268);
+            this.tableLayoutPanel2.Location = new System.Drawing.Point(3, 272);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 17;
             this.tableLayoutPanel1.SetRowSpan(this.tableLayoutPanel2, 2);
@@ -524,7 +523,7 @@
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(38, 22);
             this.textBox4.TabIndex = 130;
-            this.textBox4.Text = "1";
+            this.textBox4.Text = "0.1";
             this.textBox4.TextChanged += new System.EventHandler(this.textBox4_TextChanged);
             // 
             // textBox3
@@ -534,7 +533,7 @@
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(38, 22);
             this.textBox3.TabIndex = 129;
-            this.textBox3.Text = "1";
+            this.textBox3.Text = "0.1";
             this.textBox3.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
             // 
             // textBox2
@@ -544,7 +543,7 @@
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(38, 22);
             this.textBox2.TabIndex = 128;
-            this.textBox2.Text = "1";
+            this.textBox2.Text = "0.1";
             this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
             // label35
@@ -1327,7 +1326,7 @@
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(38, 22);
             this.textBox1.TabIndex = 127;
-            this.textBox1.Text = "1";
+            this.textBox1.Text = "0.1";
             this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // NodeTreeCtr
@@ -1340,7 +1339,7 @@
             this.NodeTreeCtr.Name = "NodeTreeCtr";
             this.NodeTreeCtr.OptionsBehavior.Editable = false;
             this.NodeTreeCtr.RowHeight = 30;
-            this.NodeTreeCtr.Size = new System.Drawing.Size(458, 259);
+            this.NodeTreeCtr.Size = new System.Drawing.Size(458, 263);
             this.NodeTreeCtr.StateImageList = this.sharedImageCollection1;
             this.NodeTreeCtr.TabIndex = 35;
             this.NodeTreeCtr.Click += new System.EventHandler(this.NodeTreeCtr_Click);

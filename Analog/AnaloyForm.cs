@@ -11,8 +11,7 @@ using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using DevExpress.XtraBars;
-using DevExpress.XtraEditors.Repository;
-using DevExpress.XtraTreeList;
+using DevExpress.XtraEditors.Repository;using DevExpress.XtraTreeList;
 using DevExpress.XtraTreeList.Columns;
 using DevExpress.XtraTreeList.Nodes;
 using Timer = System.Windows.Forms.Timer;
@@ -84,12 +83,12 @@ namespace Analog
             columnHasChildren.FieldName = "HasChildren";
             columnHasChildren.Visible = false;
             TreeListColumn columnID = NodeTreeCtr.Columns.Add();
-            columnID.Caption = "NodeID";
-            columnID.FieldName = "NodeID";
+            columnID.Caption = "MID";
+            columnID.FieldName = "MID";
             columnID.Visible = false;
             NodeTreeCtr.DataSource = nodes.Nodes;
             NodeTreeCtr.ParentFieldName = "ParentID";
-            NodeTreeCtr.KeyFieldName = "NodeID";
+            NodeTreeCtr.KeyFieldName = "MID";
             NodeTreeCtr.ExpandAll();
             NodeTreeCtr.FocusedNode = NodeTreeCtr.Nodes[0];
         }
@@ -113,6 +112,7 @@ namespace Analog
             {
                 var result = data.Where(d => d.NodeID.ToString() == node.GetValue("NodeID").ToString()).ToList();
                 ElectricityOriginalData childData = result[0] as ElectricityOriginalData;
+                
                 if (increase_or_not)
                 {
                     childData.WPP += childData.WPPIncre;
@@ -156,6 +156,7 @@ namespace Analog
 
         private void timer_Tick(object sender, EventArgs e)
         {
+            richTextBoxMessage.Text = "";
             Calculate(NodeTreeCtr.Nodes[0], true);
             ChangeTextBoxs(selectedData);
             TaskSendMessageAsyn task = new TaskSendMessageAsyn("异步发送数据",
@@ -193,6 +194,7 @@ namespace Analog
 
         private void ClearBtn_ItemClick(object sender, ItemClickEventArgs e)
         {
+            
             richTextBoxMessage.Text = "";
         }
 

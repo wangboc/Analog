@@ -43,7 +43,7 @@ namespace Analog
             data.HasChildren = true;
             foreach (XmlNode childNode in node.ChildNodes)
             {
-                Nodes.Add(GetNodesInfo(childNode, data.NodeID));
+                Nodes.Add(GetNodesInfo(childNode, data.MID));
             }
             return data;
         }
@@ -53,7 +53,7 @@ namespace Analog
             XmlNodeList xlist = xmlFile.SelectNodes("//Node");
             foreach (XmlNode xn in xlist)
             {
-                if (xn.Attributes["NodeID"].Value == data.NodeID.ToString())
+                if (xn.Attributes["MID"].Value == data.MID.ToString())
                 {
                     xn.Attributes["UA"].InnerText = data.UA.ToString();
                     xn.Attributes["UB"].InnerText = data.UB.ToString();

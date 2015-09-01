@@ -12,7 +12,6 @@ namespace Analog
         public ElectricityOriginalData(XmlNode node, int ParentID)
         {
             this.ParentID = ParentID;
-            this.NodeID = Convert.ToInt32(node.Attributes["NodeID"].Value);
             this.Name = node.Attributes["Name"].Value;
             this.PID = Convert.ToInt32(node.Attributes["PID"].Value);
             this.MID = Convert.ToInt32(node.Attributes["MID"].Value);
@@ -48,10 +47,10 @@ namespace Analog
             this.WQP = Convert.ToDouble(node.Attributes["WQP"].Value);
             this.IStatus = (node.Attributes["IStatus"].Value);
             this.EventTime = DateTime.Now.ToString("yyyy/MM/dd hh:mm:ss");
-            this.WPPIncre = 1;
-            this.WPNIncre = 1;
-            this.WQNIncre = 1;
-            this.WQPIncre = 1;
+            this.WPPIncre = 0.1;
+            this.WPNIncre = 0.1;
+            this.WQNIncre = 0.1;
+            this.WQPIncre = 0.1;
         }
 
 
