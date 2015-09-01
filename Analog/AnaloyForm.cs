@@ -24,6 +24,7 @@ namespace Analog
         private List<ElectricityOriginalData> data;
         private ElectricityOriginalData selectedData;
         private List<TextBox> tBoxs = new List<TextBox>();
+        public TcpClient tcpClient = new TcpClient();
 
         public AnaloyForm()
         {
@@ -161,7 +162,7 @@ namespace Analog
             ChangeTextBoxs(selectedData);
             TaskSendMessageAsyn task = new TaskSendMessageAsyn("异步发送数据",
                 new IPEndCondition(IPAddress.Parse(IPCtr.EditValue.ToString()), int.Parse(PortCtr.EditValue.ToString())),
-                data, UpdateMessageUI);
+                data, UpdateMessageUI, tcpClient);
             TaskPool.AddTask(task, TaskScheduler.FromCurrentSynchronizationContext());
         }
 

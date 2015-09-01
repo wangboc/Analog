@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Data;
+using System.Diagnostics;
 using System.Net;
 using System.Net.Sockets;
 using System.Text;
@@ -82,34 +83,40 @@ namespace Analog
         private TcpClient tcpClient;
 
         public TaskSendMessageAsyn(String name, IPEndCondition condition, List<ElectricityOriginalData> data,
-            UpdateDataDelegate returnFuc)
+            UpdateDataDelegate returnFuc, TcpClient tcpClient)
             : base(name, condition, returnFuc)
         {
             this.data = data;
-            tcpClient = new TcpClient();
+            this.tcpClient = tcpClient;
         }
 
         public override void Run()
         {
             try
             {
-                tcpClient.Connect((Condition as IPEndCondition).ip, (Condition as IPEndCondition).port);
+                if (!tcpClient.Connected)
+                {
+                    tcpClient = new TcpClient();tcpClient.Connect((Condition as IPEndCondition).ip, (Condition as IPEndCondition).port);
+                }
                 UpdateDataByDelegate("\n已连接主机" + DateTime.Now.ToLongTimeString());
                 string message = "";
+                int messageCount = 0;
+                Stopwatch watch = new Stopwatch();
+                watch.Start();
                 foreach (ElectricityOriginalData electricityOriginalData in data)
                 {
                     message = FormatMessage(electricityOriginalData);
-                    IAsyncResult result = SendMessageAsn(message);
-                    while (!result.IsCompleted) ;
+                    messageCount += message.Length;
+                    SendMessageAsn(message);
                     UpdateDataByDelegate("\r\n发送成功:" + message);
                 }
 
-
                 tcpClient.Close();
+                watch.Stop();
             }
             catch (Exception ee)
             {
-                UpdateDataByDelegate("\n连接失败");
+                UpdateDataByDelegate(ee.Message + "\n连接失败");
             }
             RecordData(data);
         }
@@ -166,13 +173,16 @@ namespace Analog
             return message;
         }
 
-        private IAsyncResult SendMessageAsn(string message)
+        private void SendMessageAsn(string message)
         {
             NetworkStream stream = tcpClient.GetStream();
+
             byte[] dataBytes = Encoding.ASCII.GetBytes(message);
             IAsyncResult result = stream.BeginWrite(dataBytes, 0, dataBytes.Length,
                 new AsyncCallback(SendCallback), stream); //异步发送数据
-            return result;
+//            stream.Write(dataBytes, 0, dataBytes.Length);
+            // Thread.Sleep(100);
+//            return result;
         }
 
         private static void SendCallback(IAsyncResult ar)
